@@ -40,9 +40,9 @@ $.ajax({
 })
 .done(function(respuesta) {
 	respuesta.results.forEach(function(el){
-		document.write(el.name + "<br>");
+		$('.pokemon').append("<div>"el.name + "</br>");
 	})
-	llamarHabilidades(el.url)
+
 })
 .done(function(){
 	document.write("Este es el mensaje de despues de la llamada ajax" + "<br>")	
@@ -59,6 +59,8 @@ $.ajax({
 //No hacerlo con document.write 30pts
 //Hacerlo con jquery 35ptos
 //Agregar CSS 45ptos
+//
+
 
 
 
